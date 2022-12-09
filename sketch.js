@@ -17,7 +17,7 @@ var createScene = function () {
     var scene = new BABYLON.Scene(engine);
 
     // This creates and positions a free camera (non-mesh)
-    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 10, 0), scene);
+    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(10, 10, 10), scene);
 
     // This targets the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -31,7 +31,7 @@ var createScene = function () {
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.7;
 
-    var seaGull = new meshModel('./seagulf.glb', 0.9)
+    var seaGull = new meshModel('both_houses_scene.glb', 0.9)
 
     return scene;
 };
